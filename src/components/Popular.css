@@ -1,0 +1,141 @@
+
+
+body{
+    opacity: 1;
+}
+.modal, .overlay{
+
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay{
+    background-color: black;
+    opacity: .8;
+}
+
+
+.modal-content{
+    width: 80%;
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(20,20,20);
+    color: white;
+    z-index: 6;
+    border-radius: 5px;
+    height: 88vh;
+    overflow-y: auto;
+}
+
+.modal-img{
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.gradient{
+    background: linear-gradient(rgba(20,20,20,0.2), rgba(20,20,20,1));
+}
+
+.modal-desc{
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.modal{
+    overflow: auto;
+}
+
+h4{
+    font-weight: 400;
+}
+
+.close{
+    position: absolute;
+    right: 0%;
+    margin: 1rem;
+    border: none;
+    background-color: black;
+    opacity: .85;
+    color: white;
+    padding: .5rem .8rem;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close:hover{
+    opacity: .6;
+}
+
+.top{
+    position: relative;
+}
+
+.buttons{
+
+    margin: 0rem 2rem;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    z-index: 2;
+}
+
+.play{
+    margin: 0rem 1rem 1rem;
+    padding: .4rem 1.7rem;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play:hover{
+    opacity: .5;
+}
+
+.like, .add{
+    background: none;
+    margin: 0rem .4rem;
+    padding: .4rem;
+    width: 1rem;
+    border: 2px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add:hover{
+    opacity: .7;
+}
+.like:hover{
+    opacity: .7;
+}
+
+.similar{
+    margin: 0rem 2rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 400px){
+    .play{
+        font-size: 12px;
+        margin: 0;
+        padding: .2rem 1.7rem;
+    }
+
+    .like, .add {
+        padding: .2rem;
+
+    }
+}
+

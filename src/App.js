@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Homepage from "./pages/Homepage";
+import styled from "styled-components"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Background className="App">
+        <Homepage /> 
+    </Background>
   );
 }
+
+const Background = styled.div`
+background-color:rgb(20, 20, 20);
+height: 150vh;
+`;
 
 export default App;
